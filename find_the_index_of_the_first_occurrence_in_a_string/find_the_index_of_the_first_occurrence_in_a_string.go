@@ -32,7 +32,6 @@
 //
 // [End of Description]
 package main
-
 import "fmt"
 
 func main() {

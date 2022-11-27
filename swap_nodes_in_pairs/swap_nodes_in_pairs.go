@@ -37,24 +37,25 @@
  * }
  */
 package main
+import "fmt"
 
 type ListNode struct {
 	Val  int
 	Next *ListNode
 }
 
-// func main() {
-// 	head := &ListNode{}
-// 	tmp := &ListNode{Val: 5}
-// 	head.Val = 10
-// 	head.Next = tmp
-// 	newHead := swapPairs(head)
-// 	for newHead != nil {
-// 		fmt.Printf("%v\n", newHead.Val)
-// 		newHead = newHead.Next
-// 	}
+func main() {
+	head := &ListNode{}
+	tmp := &ListNode{Val: 5}
+	head.Val = 10
+	head.Next = tmp
+	newHead := swapPairs(head)
+	for newHead != nil {
+		fmt.Printf("%v\n", newHead.Val)
+		newHead = newHead.Next
+	}
 
-// }
+}
 
 // local end
 func swapPairs(head *ListNode) *ListNode {

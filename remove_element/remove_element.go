@@ -61,10 +61,10 @@
 
 package main
 
-// func main() {
-// 	removeElement([]int{1, 2, 3, 4}, 2)
+func main() {
+	removeElement([]int{1, 2, 3, 4}, 2)
 
-// }
+}
 
 // local end
 
