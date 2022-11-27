@@ -46,7 +46,7 @@ func main() {
 	second := &ListNode{Val: 2}
 	head.Next = second
 
-	head = rotateRight(head, 2)
+	head = rotateRight(head, 1)
 	for head != nil {
 		fmt.Printf("%v\n", head.Val)
 		head = head.Next
@@ -58,29 +58,49 @@ func main() {
 
 func rotateRight(head *ListNode, k int) *ListNode {
 	ll := listLen(head)
+    if ll <=1{
+        return head
+    }
 	modL := k % ll
-	if modL == 0 {
-		return head
-	}
+    if modL == 0 {
+        return head
+    }
 
-	pos := 0
-	l := head
-	breakPos := l
-	breakPrePos := l
+    // last point to head
+    oriHead := head
+    lastNode := &ListNode{}
 
-	for l != nil {
-		if pos == modL-1 {
-			breakPrePos = l
-		}
-		if pos == modL {
-			breakPos = l
-		}
+    for head != nil{
+        if head.Next == nil{
+            lastNode = head
+            lastNode.Next = oriHead
+            break
+        }
+        head = head.Next
+    }
 
-		pos++
-		l = l.Next
-	}
 
-	return l
+    breakHead := oriHead
+
+    for i:=0; oriHead != nil;i++{
+        if i == (ll-modL){
+            breakHead = oriHead
+            break
+        }
+        oriHead = oriHead.Next
+    }
+
+    retHead := breakHead
+
+    for breakHead!=nil{
+        if breakHead.Next == retHead{
+            breakHead.Next = nil
+            break
+        }
+        breakHead = breakHead.Next
+    }
+
+	return retHead
 
 }
 
