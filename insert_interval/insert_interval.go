@@ -1,6 +1,7 @@
+import "fmt"
+
 // Insert Interval
-//
-// [Medium] [AC:41.9% 131.6K of 314.3K] [filetype:golang]
+// [Medium] [AC:41.9% 131.6K of 314.4K] [filetype:golang]
 //
 // 给你一个 无重叠的 ，按照区间起始端点排序的区间列表。
 //
@@ -53,10 +54,6 @@
 // 0 <= newInterval[0] <= newInterval[1] <= 105
 //
 // [End of Description]
-package main
-
-import "fmt"
-
 // local end
 func insert(intervals [][]int, newInterval []int) [][]int {
 

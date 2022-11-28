@@ -8,3 +8,4 @@
   | rotate_list            | [go](./rotate_list/rotate_list.go)                       | Medium |
   | search_insert_position | [go](./search_insert_position/search_insert_position.go) | Easy   |
   | plus_one               | [go](./plus_one/plus_one.go)                             | Easy   |
+  | insert_interval        | [go](./insert_interval/insert_interval.go                | Medium |
