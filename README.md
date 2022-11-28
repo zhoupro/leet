@@ -7,3 +7,4 @@
   | find_index_string      | [go](./find_index_string/find_index__string.go)          | Medium |
   | rotate_list            | [go](./rotate_list/rotate_list.go)                       | Medium |
   | search_insert_position | [go](./search_insert_position/search_insert_position.go) | Easy   |
+  | plus_one               | [go](./plus_one/plus_one.go)                             | Easy   |
