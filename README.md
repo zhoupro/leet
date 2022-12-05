@@ -10,4 +10,4 @@
   | plus_one               | [go](./plus_one/plus_one.go)                                        | Easy   |
   | insert_interval        | [go](./insert_interval/insert_interval.go)                          | Medium |
   | lru_cache              | [go](./lru_cache/lru_cache.go)                                      | Medium |
-  | implement_queue_stack  | [go](./implement_queue_using_stacks/implement_queue_using_stacks.go | Easy   |
+  | implement_queue_stack  | [go](./implement_queue_using_stacks/implement_queue_using_stacks.go) | Easy   |
